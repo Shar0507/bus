@@ -23,8 +23,8 @@ function shuffleArray(array) {
   }
 }
 
-// Schud de lijst door elkaar
-shuffleArray(passagiers);
+// // Schud de lijst door elkaar
+// shuffleArray(passagiers);
 
 // Laat de nieuwe, gehusselde lijst zien
 toonPassagiers(passagiers);
