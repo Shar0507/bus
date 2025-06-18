@@ -1,8 +1,9 @@
+// opdracht 1. 
 let passagiers = [
   { id: 163821, naam: "Leo Daams", saldo: 34, woonplaats: "Den Bosch" },
   { id: 163822, naam: "Sofie Janssen", saldo: 22, woonplaats: "Utrecht" }
 ];
-
+// opdracht 2. passagier lijst allerlei gegevens ook geconnect met Html
 function lijst() {
   const ul = document.getElementById("passagierslijst");
   if (passagiers.length === 0) {
@@ -13,7 +14,7 @@ function lijst() {
     `<li>${p.naam} (${p.id}) – €${p.saldo.toFixed(2)} – ${p.woonplaats}</li>`
   ).join('');
 }
-
+// opdracht 3. twee geluiden voor check in en uit vanaf Html connecten
 function speelGeluid() {
   const beep = document.getElementById("beepgeluid");
   if (beep) {
@@ -29,7 +30,7 @@ function speelGeluid2() {
     beep.play();
   }
 }
-
+// opdracht 4. persoon gegevens van naam, woonplaats en saldo
 function checkIn() {
   const naam = prompt("Naam:");
   const woonplaats = prompt("Woonplaats:");
@@ -49,6 +50,7 @@ function checkIn() {
   speelGeluid(); // geluid afspelen
 }
 
+// opdracht 5. wanner iemand check uit dat die zijn naam invoer waardoor de gegevens weg gaat
 function checkUit() {
   const naam = prompt("Naam passagier die wil uitstappen:");
   const index = passagiers.findIndex(p => p.naam.toLowerCase() === naam?.toLowerCase());

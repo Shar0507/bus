@@ -1,4 +1,4 @@
-// 1. Start: 10 mensen in de bus
+// opdracht 1. Start: 10 mensen in de bus en // opdracht 3. 5de naam weghalen
 let passagiers = ["ali", "bo", "carmen", "david", "farid", "gina", "hugo", "iris", "joris"];
 
 // 2. Nieuwe passagier stapt in
@@ -34,8 +34,8 @@ const output = document.getElementById("passagierslijst");
 output.innerHTML += "<h3>Eindhalte: passagiers stappen uit</h3><ul>";
 
 while (passagiers.length > 0) {
-  const uitgestapt = passagiers.shift(); // eerste passagier stapt uit
-  const resterend = passagiers.length; // hoeveel er nog in de bus zitten
+  const uitgestapt = passagiers.shift();
+  const resterend = passagiers.length;
   output.innerHTML += `<li>${uitgestapt} is uitgestapt – nog ${resterend} in de bus</li>`;
 }
 
