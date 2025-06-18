@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>OV Passagiers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+
+  <!-- Achtergrond GIF -->
+  <img src="video.gif" alt="achtergrond" style="
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  ">
+
+  <h1>OV Passagiers</h1>
+  <ul id="passagierslijst"></ul>
+
+  <button id="checkin">Check in</button>
+  <button id="checkuit">Check uit</button>
+
+  <!-- 🔊 Geluid voor check-in -->
+  <audio id="beepgeluid" src="gta.mp3" preload="auto"></audio>
+
+  <!-- 🔊 Geluid voor check-out -->
+  <audio id="beepgeluid2" src="reverb (mp3cut.net).mp3" preload="auto"></audio>
+
+  <!-- 🧠 Logica van de applicatie -->
+  <script src="ovpaal.js"></script>
+
+</body>
+</html>
